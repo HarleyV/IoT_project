@@ -1,0 +1,6 @@
+<form *ngIf="!auth.getAuthState()" #loginForm="ngForm">
+    <p>Login Form</p>
+    <input type="email" ngModel name="email" id="login-email" placeholder="email"><br>
+    <input type="password" ngModel name="password" id="login-password" placeholder="password"><br>
+    <button type="submit" (click)="auth.emailSignIn(loginForm.value.email, loginForm.value.password)" >Submit</button>
+</form>

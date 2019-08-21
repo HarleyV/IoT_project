@@ -1,0 +1,6 @@
+<form #addDeviceForm = "ngForm" id="add_device_form">
+    <h1>Add a Device</h1>
+    <input type="text" ngModel name="clientID" placeholder="Enter Client ID"><br>
+    <input type="text" ngModel name="password" placeholder="Enter Client Password"><br>
+    <span><button type="submit" (click)="registerDevice(addDeviceForm.value.clientID, addDeviceForm.value.password)">Submit</button></span>
+</form>

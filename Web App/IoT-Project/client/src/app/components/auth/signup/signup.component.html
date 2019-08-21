@@ -1,0 +1,6 @@
+<form *ngIf="!auth.getAuthState()" #signUpForm="ngForm">
+    <p>Register Form</p>
+    <input type="email" ngModel name="email" id="signup-email" placeholder="email"><br>
+    <input type="password" ngModel name="password" id="signup-password" placeholder="password"><br>
+    <button type="submit" (click)="auth.register(signUpForm.value.email, signUpForm.value.password)" >Submit</button>
+</form>

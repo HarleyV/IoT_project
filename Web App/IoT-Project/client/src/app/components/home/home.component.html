@@ -1,0 +1,9 @@
+<p>Home Page</p>
+<div class="home">
+    <app-login></app-login>
+    <app-signup></app-signup>
+    <app-logout></app-logout>
+
+    <a *ngIf="auth.getAuthState()" (click)="onClick()">Go to Dashboard</a>
+
+</div>

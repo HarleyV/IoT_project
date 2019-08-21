@@ -1,0 +1,12 @@
+<div id="main-body">
+    <div *ngFor="let device of deviceList; index as i">
+        <h2>{{device.name}}</h2>
+
+        <h3>Control Panel</h3>
+        <div class="control-panel">
+            <div *ngFor="let panel of device['functions']">
+                {{ panel.type }}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.side-nav {
+    left: 0;
+    height: 100%;
+    margin: none;
+    padding: 20px;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    /* Background */
+    background-color: rgb(43, 42, 53)
+}
+
+.nav-link {
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(233, 233, 233);
+
+}
